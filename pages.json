@@ -1,0 +1,91 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	{
+	    "path" : "pages/manhua/manhua",
+	    "style" : {"navigationStyle": "custom" }
+	},
+	    {
+            "path" : "pages/dongman/dongman",
+            "style" : {
+			"navigationStyle": "custom" // 隐藏系统导航栏
+			 }
+        }
+        
+        ,{
+            "path" : "pages/manhua/more2",
+            "style" : {"navigationStyle": "default"}
+        },
+		{
+		    "path" : "pages/manhua/more",
+		    "style" : {"navigationStyle": "default"}
+		}
+
+        ,{
+            "path" : "component/bar/search",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/fenxiang/fenxiang",
+            "style" : {"navigationStyle": "custom"}
+        }
+        ,{
+            "path" : "pages/my/my",
+            "style" : {"navigationStyle": "custom"}
+        }
+        ,{
+            "path" : "pages/my/changeAva",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+        ,{
+            "path" : "pages/dongman/player",
+            "style" :                                                                                    
+            {
+                "navigationBarTitleText": "",
+                "enablePullDownRefresh": false
+            }
+            
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-app",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"easycom": {
+			"^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+		},
+	"tabBar": {
+		"list": [
+					{
+						"pagePath":"pages/manhua/manhua",
+						"text":"首页",
+						"iconPath":"static/home_normal.png",
+						"selectedIconPath":"static/home.png"
+					},
+					{
+						"pagePath":"pages/dongman/dongman",
+						"text":"搜索",
+						"iconPath":"static/search_normal.png",
+						"selectedIconPath":"static/search.png"
+					},
+					{
+						"pagePath":"pages/fenxiang/fenxiang",
+						"text":"排行榜",
+						"iconPath":"static/paihangbang_normal.png",
+						"selectedIconPath":"static/paihangbang.png"
+					},
+					{
+						"pagePath":"pages/my/my",
+						"text":"咚咚抢",
+						"iconPath":"static/alert_normal.png",
+						"selectedIconPath":"static/alert.png"
+					}
+				]
+	}	
+}
